@@ -7,8 +7,13 @@ import { data } from 'autoprefixer';
 //this functions fetches all todoList
 async function getData() {
   try {
-    const res=await fetch('http://127.0.0.1:3000/api/todo',{method:"GET",
-  cache: 'no-store'})
+    const res=await fetch("http://127.0.0.1:3000/api/todo", {
+      method: "GET",
+      cache:"no-store",
+      headers: {
+          "Content-Type": "application/json"
+      }
+  });
   console.log(res.ok)
     if (!res.ok) {
       throw new Error('Failed to get data')
