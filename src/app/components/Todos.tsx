@@ -34,7 +34,7 @@ const todos =async() => {
       {/* circle bullet  */}
       <div className='h-3 w-3 mx-2  bg-secondary rounded-full'></div>
       {/* Individual Todo */}
-      <EachTodo name={item.name} id={item.id} isdone={item.isdone} />
+      <EachTodo key={item.id} name={item.name} id={item.id} isdone={item.isdone} />
 
       </div>
     )
