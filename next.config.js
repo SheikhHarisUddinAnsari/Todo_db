@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {fastRefresh: false,
+const nextConfig = {
     async rewrites() {
         return [
           {

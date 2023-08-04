@@ -7,7 +7,7 @@ import { data } from 'autoprefixer';
 //this functions fetches all todoList
 async function getData() {
   try {
-    const res=await fetch("http://127.0.0.1:3000/api/todo", {
+    const res=await fetch("https://todo-53y1yzko8-sheikhharisuddinansari.vercel.app/api/todo", {
       method: "GET",
       cache:"no-store",
       headers: {
